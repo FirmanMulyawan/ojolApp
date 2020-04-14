@@ -4,29 +4,17 @@ import {Input, Button} from '../../components';
 import {colors} from '../../utils';
 import {IconBack, IllustrationRegister} from '../../assets';
 import {ScrollView} from 'react-native-gesture-handler';
-import {useSelector} from 'react-redux';
 
 const Register = () => {
-  // const globalState = useSelector(state => state);
-  const RegisterReducer = useSelector(state => state.RegisterReducer);
-
   const [form, setForm] = useState({
     fullName: '',
     email: '',
     password: '',
-  });
+  }); 
 
   // useEffect(() => {
   //   console.log('tes hello world');
   // }, []);
-
-  // useEffect(() => {
-  //   console.log('global state: ', globalState);
-  // }, [globalState]);
-
-  useEffect(() => {
-    console.log('global state: ', RegisterReducer);
-  }, [RegisterReducer]);
 
   const sendData = () => {
     console.log('data yang dikirim: ', form);
@@ -48,9 +36,7 @@ const Register = () => {
           style={styles.illustration}
         />
         <Text style={styles.text.desc}>
-          Mohon mengisi beberapa data unutk proses daftar anda{' '}
-          {/* {globalState.name} */}
-          {RegisterReducer.title}
+          Mohon mengisi beberapa data unutk proses daftar anda
         </Text>
         <View style={styles.space(64)} />
         <Input

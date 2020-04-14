@@ -1,8 +1,10 @@
 npx react-native run-android
-
-<!-- installan  -->
-
 npx react-native init OjolApp --version 0.61
+
+++++++++++++++++++ REDUX ++++++++++++++++++++++
+npm install redux
+npm install react-redux
++++++++++++++++++++++++++++++++++++++++++++++++
 
 ++++++++++++++++++ SVG ++++++++++++++++++++++++
 npm install react-native-svg
