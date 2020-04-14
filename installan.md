@@ -31,3 +31,13 @@ git push origin master
 npm cache clean --force
 
 npm audit fix
+
++++++++++++++++++++ Pararenting ++++++++++++++++++
+
+- untuk menggunakan image di react native, secara
+  default tidak support SVG, sehingga yang paling
+  aman dalam bentuk JPG, PNG. PNG bisa langsung
+  dispupport react native
+- SVG harus menggunakan library tambahan
+
+++++++++++++++++++++++++++++++++++++++++++++++++++
