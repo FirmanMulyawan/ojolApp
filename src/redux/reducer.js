@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 
-initialState = {
+const initialState = {
   name: 'prawito hudoro',
 };
 

@@ -5,6 +5,7 @@ import {colors} from '../../utils';
 import {IconBack, IllustrationRegister} from '../../assets';
 import {ScrollView} from 'react-native-gesture-handler';
 import {useSelector, useDispatch} from 'react-redux';
+import {setForm} from '../../redux';
 
 const Register = () => {
   // const globalState = useSelector(state => state);
@@ -28,13 +29,13 @@ const Register = () => {
     console.log('data yang dikirim: ', RegisterReducer.form);
   };
 
-  const onInputChange = (value, input) => {
+  const onInputChange = (value, inputType) => {
     // setForm({
     //   ...form,
     //   [input]: value,
     // });
     // dispatch({type: 'SET_TITLE'});
-    dispatch({type: 'SET_FORM', inputType: input, inputValue: value});
+    dispatch(setForm(inputType, value));
   };
   return (
     <View style={styles.wrapper.page}>
