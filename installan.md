@@ -1,6 +1,6 @@
 npx react-native run-android
 npx react-native init OjolApp --version 0.61
-
+alt + shift + o = me-remove import yang tidak digunakan
 ++++++++++++++++++ REDUX ++++++++++++++++++++++
 npm install redux
 npm install react-redux
